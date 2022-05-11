@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+      // 1.给按钮绑定了点击事件
+      // 2.当前元素设置背景颜色 $(this)
+      // 3.其他兄弟 去掉背景颜色 
+      $(function () {
+        $('button').click(function () {
+          $(this).css('background', 'red')
+          $(this).siblings('button').css('background', '')
+        })
+      })
+      
+    </script>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+</body>
+</html>
